@@ -7,8 +7,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
+  "com.typesafe.akka" %% "akka-camel" % "2.3.8",
+  "org.apache.camel" % "camel-rabbitmq" % "2.14.1",
   cache,
   ws
 )
